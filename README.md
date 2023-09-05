@@ -1,3 +1,4 @@
 # hello-react
 hello-react <br>
-react + Vite 
+react + Vite <br>
+NPM : yarn create vite
