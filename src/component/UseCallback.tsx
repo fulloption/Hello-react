@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
 const functionsCounter = new Set();
 
@@ -16,6 +16,9 @@ const Counter = () => {
   const incrementOtherCounter = useCallback(() => {
     setOtherCounter(otherCounter + 1);
   }, [otherCounter]);
+  const decrementOtherCounter = useCallback(() => {
+    setOtherCounter(otherCounter - 1);
+  }, [otherCounter]);
 
   functionsCounter.add(increment);
   functionsCounter.add(decrement);
@@ -30,6 +33,7 @@ const Counter = () => {
       &nbsp;&nbsp;<button onClick={decrement}> - </button>
       &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;otherCounter: {otherCounter}
       &nbsp;&nbsp;<button onClick={incrementOtherCounter}>incrementOtherCounter</button>
+      &nbsp;&nbsp;<button onClick={decrementOtherCounter}>decrementOtherCounter</button>
     </>
   );
 };
