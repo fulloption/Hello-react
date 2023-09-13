@@ -11,7 +11,7 @@ ReactDOM
       </React.StrictMode>,
     )
 ReactDOM
-    .createRoot(document.getElementById('calback')!)
+    .createRoot(document.getElementById('callback')!)
         .render(
         <React.StrictMode>
             <Callback />
