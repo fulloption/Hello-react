@@ -13,7 +13,7 @@ class ApiExample extends Component {
 
   componentDidMount() {
     // You can replace the URL with your API endpoint
-    axios.get('https://dog.ceo/api/breeds/image/random')
+    axios.get('https://dog.ceo/api/breeds/image/random55')
       .then((response) => {
         this.setState({
           data: response.data,
@@ -53,5 +53,4 @@ class ApiExample extends Component {
     );
   }
 }
-
 export default ApiExample;
