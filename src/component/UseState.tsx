@@ -5,7 +5,7 @@ function MyApp() {
   
     return (
       <div>
-        <p>useState-ค่าปัจจุบัน: {count}</p>
+        <p>useState-ค่าปัจจุบัน : {count}</p>
         <button onClick={() => setCount(count + 1)}>เพิ่มค่า</button>
       </div>
     );

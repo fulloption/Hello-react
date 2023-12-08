@@ -20,6 +20,15 @@ ReactDOM
         <Context />
         </React.StrictMode>,
     )    
+
+ReactDOM
+    .createRoot(document.getElementById('useState')!)
+      .render(
+        <React.StrictMode>
+          <UState />
+        </React.StrictMode>,
+      )    
+      
 ReactDOM
     .createRoot(document.getElementById('useEffect')!)
         .render(
@@ -27,10 +36,3 @@ ReactDOM
             <UEffect />
         </React.StrictMode>,
 )
-ReactDOM
-  .createRoot(document.getElementById('useState')!)
-    .render(
-      <React.StrictMode>
-        <UState />
-      </React.StrictMode>,
-    )
