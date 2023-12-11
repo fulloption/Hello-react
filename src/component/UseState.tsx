@@ -9,6 +9,5 @@ function MyApp() {
         <button onClick={() => setCount(count + 1)}>เพิ่มค่า</button>
       </div>
     );
-  }
-  
+  }  
   export default MyApp;
