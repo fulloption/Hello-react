@@ -50,5 +50,4 @@ function Login() {
     </MDBContainer>
   );
 }
-
 export default Login
