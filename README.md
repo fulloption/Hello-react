@@ -10,16 +10,12 @@ Running :  yarn dev --port 4000
         Props vs State
         Conditional Rendering
         Composition vs Inheritance
-    -Functional Components***
+    -Functional Components*** ปัจจุบันนิยมใช้ Function ในการทำ components 
     
     -Basic Hooks   
         useState - จัดการ State ของคอมโพเนนต์ 
         useEffect - ทำ Side Effect เช่น fetch data, set up subscriptions    
         useContext - แชร์ข้อมูลระหว่างคอมโพเนนต์ที่ไม่เกี่ยวข้องโดยตรง
-        useReducer - จัดการ State ที่ซับซ้อนด้วย reducer pattern
-        useMemo - Memoize ค่าเพื่อเพิ่มประสิทธิภาพ
-        useCallback - Memoize ฟังก์ชันเพื่อเพิ่มประสิทธิภาพ
-        useRef - เข้าถึง DOM Node โดยตรง
         ** Best Practices สำหรับ React Hooks
         - เรียก Hooks เสมอที่ Top Level ของฟังก์ชัน โดยไม่เรียกใน loop หรือ if 
         - เรียก Hooks เฉพาะภายในฟังก์ชันคอมโพเนนต์เท่านั้น จะไม่ไปเรียกที่อื่น
@@ -30,17 +26,17 @@ Running :  yarn dev --port 4000
         - หลีกเลี่ยงการใช้ Ref สำหรับจัดการ State Ref ควรใช้สำหรับการเข้าถึง DOM Node โดยตรง
         - ทำความเข้าใจ Lifecycle Methods ของ Hooks -function มีพฤติกรรมที่แตกต่างกัน
     -Additional Hooks   
-        useReducer   
-        useCallback   
-        useMemo   
-        useRef   
-        useImperativeHandle   
-        useLayoutEffect   
-        useDebugValue   
-        useDeferredValue   
-        useTransition   
-        useId   
+        useReducer - จัดการ State ที่ซับซ้อนด้วย reducer pattern
+        useCallback - Memoize ฟังก์ชันเพื่อเพิ่มประสิทธิภาพ 
+        useMemo - Memoize ค่าเพื่อเพิ่มประสิทธิภาพ  
+        useRef - เข้าถึง DOM Node โดยตรง
+        useImperativeHandle - เข้าถึงและควบคุม Component Child จาก Parent
+        useLayoutEffect - รัน Effect หลังการ Layout คล้ายกับ useEffect
+        useDebugValue - แสดงค่า Debug ใน React DevTools
+        useDeferredValue -เลื่อนการอัปเดตค่าเพื่อเพิ่มประสิทธิภาพ
+        useTransition - จัดการการเปลี่ยนแปลง UI อย่างราบรื่น
+        useId - สร้าง ID ที่ไม่ซ้ำกันสำหรับองค์ประกอบ
     -Library Hooks   
-        useSyncExternalStore   
-        useInsertionEffect   
+        useSyncExternalStore -จัดการ State จากภายนอก React   
+        useInsertionEffect - รัน Effect หลังการแทรกองค์ประกอบ
 -----------------------------------------
