@@ -15,14 +15,14 @@ function App() {
   useEffect(function() {
     timerid.current = setInterval(function() {
       dispatch("increment");
-    }, 2000);
+    }, 250);
 
     return () => clearInterval(timerid.current);
   }, []);
 
   return (
     <div className="App">
-      <h5>UseEffect : {state}</h5>
+      <h5>UseEffect : {state}  time = 250 ms</h5>
     </div>
   );
 }

@@ -1,16 +1,18 @@
 # hello-react
-react + Vite
-NPM : yarn create vite
-Running :  yarn dev --port 4000
-2023 Test
+    React + Vite  Project Starter
+    NPM : yarn create vite
+    Running :  yarn dev --port 4000
+    2023 Test
 
     React  
     -Component Basics
-        JSX
+        JSX - (JavaScript XML)
         Props vs State
-        Conditional Rendering
+            Props-ส่งข้อมูลจากพ่อไปลูก อ่านอย่างเดียว
+            State-ข้อมูลภายใน Component เปลี่ยนแปลงได้ ทำให้ Component Render ใหม่อีกครั้ง
+        Conditional Rendering - การแสดงผลโดยมีเงือนไข เช่น ต้อง login ก่อนถึงแสดงผล
         Composition vs Inheritance
-    -Functional Components*** ปัจจุบันนิยมใช้ Function ในการทำ components 
+    -Functional Components*** ปัจจุบันนิยมใช้ Function ในการทำ components เท่านั้น
     
     -Basic Hooks   
         useState - จัดการ State ของคอมโพเนนต์ 
