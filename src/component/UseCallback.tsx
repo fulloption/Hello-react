@@ -23,6 +23,7 @@ const Counter = () => {
   functionsCounter.add(increment);
   functionsCounter.add(decrement);
   functionsCounter.add(incrementOtherCounter);
+  functionsCounter.add(decrementOtherCounter);
 
   console.log(functionsCounter);
 

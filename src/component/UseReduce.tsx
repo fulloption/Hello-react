@@ -1,29 +1,36 @@
-import React, { useEffect, useRef, useReducer } from "react";
+import React, { useReducer } from 'react';
 
+// 1. กำหนด initial state
+const initialState = {
+  count: 0,
+};
 
-
-function reducer(state, action) {
-  if (action === "increment") {
-    console.log(state);
-    return state + 1;
+// 2. สร้าง reducer function
+// reducer function รับ state ปัจจุบันและ action
+// แล้ว return state ใหม่
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return { count: state.count + 1 };
+    case 'DECREMENT':
+      return { count: state.count - 1 };
+    default:
+      return state;
   }
-}
+};
 
-function App() {
-  let [state, dispatch] = useReducer(reducer, 0);
-  let timerid = useRef();
-  useEffect(function() {
-    timerid.current = setInterval(function() {
-      dispatch("increment");
-    }, 250);
-
-    return () => clearInterval(timerid.current);
-  }, []);
+function Counter() {
+  // 3. ใช้ useReducer hook
+  // useReducer hook จะ return state ปัจจุบันและ dispatch function
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="App">
-      <h5>UseEffect : {state}  time = 250 ms</h5>
+    <div>
+      <h1>{state.count}</h1>
+      <button onClick={() => dispatch({ type: 'DECREMENT' })}>-</button>
+      <button onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
     </div>
   );
 }
-export default App;
+
+export default Counter;

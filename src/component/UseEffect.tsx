@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function App() {
+function App() {
   const [count, setCount] = useState(0);
 
   const [state, setState] = useState(0);
@@ -15,8 +15,12 @@ export default function App() {
   });
 
   useEffect(() => {
-    console.log("updated with dependencies");
+    console.log("updated with count");
   }, [count]);
+
+  useEffect(() => {
+    console.log("updated with state");
+  }, [state]);
 
   useEffect(() => {
     const onMousedown = () => {
@@ -36,7 +40,7 @@ export default function App() {
       <h2>useEffect Change State {state}</h2>
       <button
         onClick={() => {
-          setCount((state) => state + 1);
+          setCount((count) => count + 1);
         }}
       >
         Add Count
@@ -51,3 +55,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App

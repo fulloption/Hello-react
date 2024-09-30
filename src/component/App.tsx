@@ -3,10 +3,10 @@ import reactLogo from '../assets/react.svg'
 import dnLogo from '../assets/dn.gif'
 import viteLogo from '/vite.svg'
 import '../styles/App.css'
+import { PhoneInput } from '@react-awesome/components';
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
@@ -29,8 +29,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+    
     </>
   )
 }
-
 export default App
