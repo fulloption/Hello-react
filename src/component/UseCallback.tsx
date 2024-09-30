@@ -1,42 +1,31 @@
-import React, { useState, useCallback } from "react";
-// import ReactDOM from "react-dom";
+import React, { useState, useCallback } from 'react';
 
-const functionsCounter = new Set();
+// Child Component ที่รับฟังก์ชันเป็น props
+const ExpensiveComponent = React.memo(({ onEvent }) => {
+  console.log('ExpensiveComponent rendered!');
+  return <button onClick={onEvent}>Increment</button>;
+});
 
-const Counter = () => {
+const ParentComponent = () => {
   const [count, setCount] = useState(0);
-  const [otherCounter, setOtherCounter] = useState(0);
 
-  const increment = useCallback(() => {
+  // ใช้ useCallback เพื่อ memoize ฟังก์ชัน onIncrement
+  const handleIncrement = useCallback(() => {
     setCount(count + 1);
   }, [count]);
-  const decrement = useCallback(() => {
+  // ใช้ useCallback เพื่อ memoize ฟังก์ชัน onIncrement
+  const handleDecrement = useCallback(() => {
     setCount(count - 1);
   }, [count]);
-  const incrementOtherCounter = useCallback(() => {
-    setOtherCounter(otherCounter + 1);
-  }, [otherCounter]);
-  const decrementOtherCounter = useCallback(() => {
-    setOtherCounter(otherCounter - 1);
-  }, [otherCounter]);
-
-  functionsCounter.add(increment);
-  functionsCounter.add(decrement);
-  functionsCounter.add(incrementOtherCounter);
-  functionsCounter.add(decrementOtherCounter);
-
-  console.log(functionsCounter);
 
   return (
-    <>
-      useCallback  -  Count: {count}  
-      &nbsp;&nbsp;<button onClick={increment}> + </button>
-      &nbsp;&nbsp;<button onClick={decrement}> - </button>
-      &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;otherCounter: {otherCounter}
-      &nbsp;&nbsp;<button onClick={incrementOtherCounter}>incrementOtherCounter</button>
-      &nbsp;&nbsp;<button onClick={decrementOtherCounter}>decrementOtherCounter</button>
-    </>
+    <div>
+      <p>Count: {count}</p>
+      {/* ส่งฟังก์ชันที่ memoize แล้วเป็น props */}
+      <ExpensiveComponent onEvent={handleIncrement} />
+      <ExpensiveComponent onEvent={handleDecrement} />
+    </div>
   );
 };
 
-export default Counter;
+export default ParentComponent;
