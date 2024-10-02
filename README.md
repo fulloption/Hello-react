@@ -61,8 +61,8 @@
         - ทำความเข้าใจ Lifecycle Methods ของ Hooks -function มีพฤติกรรมที่แตกต่างกัน
     -Rendering
         -Component Life Cycle  วงจรชีวิตของ component ในแอปพลิเคชัน React
-        -Lists and Keys
-        -Render Props
+        -Lists and Keys การใช้ key เป็นสิ่งสำคัญมากใน React เพราะมันช่วยให้ React ทำงานได้อย่างถูกต้อง
+        -Render Props เทคนิคที่ช่วยให้เราสามารถส่ง"วิธีการแสดงผล"จาก component หนึ่งไปยังอีก component หนึ่งได้
         -Refs
         -Events
         -High Order Components
