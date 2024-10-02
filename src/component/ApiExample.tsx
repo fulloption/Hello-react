@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     const fetchImage = async () => {
       try {
-        const response = await fetch('https://dog.ceo/api/breeds/image/random');
+        const response = await fetch('https://dog.ceo/api/breeds/image/random1');
         const data = await response.json();
         setImageUrl(data.message);
       } catch (error) {

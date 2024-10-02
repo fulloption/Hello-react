@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import UState from '../component/UseState.tsx'
-import UEffect from '../component/UseEffect.tsx'
-import Context from '../component/UseContext.tsx'
-import Callback from '../component/UseCallback.tsx' 
-import UseReduce from '../component/UseReduce.tsx' 
-import UseRef from '../component/UseRef.tsx'
+import UState from '../component/hook/UseStateComp.tsx'
+import UEffect from '../component/hook/UseEffectComp.tsx'
+import Context from '../component/hook/UseContextComp.tsx'
+import Callback from '../component/hook/UseCallbackComp.tsx' 
+import UseReduce from '../component/hook/UseReduceComp.tsx' 
+import UseRef from '../component/hook/UseRefComp.tsx'
+import UseMemo from '../component/hook/UseMemoComp.tsx'
 import ApiDom from '../component/ApiExample.tsx'
 ReactDOM
     .createRoot(document.getElementById('useState')!)
@@ -52,6 +53,14 @@ ReactDOM
         <UseRef />
       </React.StrictMode>,
     )
+
+ReactDOM
+    .createRoot(document.getElementById('useMemo')!)
+      .render(
+        <React.StrictMode>
+          <UseMemo />
+        </React.StrictMode>,
+      )
 
 ReactDOM
   .createRoot(document.getElementById('api')!)

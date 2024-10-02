@@ -836,6 +836,72 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
   integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
+"@react-awesome/autosizer@0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@react-awesome/autosizer/-/autosizer-0.0.0.tgz#b8b3eebfbc56569e3ec5e26235a43b5f1ab361e3"
+  integrity sha512-N8dgeXgOHUtvWruSMmrjVH1CmFQqwssYQyTZ/0FPRfR2EahyogHI7F9e8tdpEqd7T2QvMy+Do1IJQT+HrryFxA==
+  dependencies:
+    react-merge-refs "^2.1.1"
+
+"@react-awesome/components@^1.0.21":
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/@react-awesome/components/-/components-1.0.21.tgz#d1ad34fac70f4bce01e3c9e3d12a325d0266d34b"
+  integrity sha512-2SDR9cYWxdyZ+tGZLFeu7dwUZtnUDwLwq193wEooj1BD7lZAsRTMVKqxagyQTqOrL8WPXnlJUSyEmAIs1x3YiA==
+  dependencies:
+    "@react-awesome/autosizer" "0.0.0"
+    "@react-awesome/phone-input" "1.1.6"
+    "@react-awesome/use-breakpoint" "1.0.0"
+    "@react-awesome/use-click-outside" "0.0.3"
+    "@react-awesome/use-preserve-input-caret-position" "0.0.3"
+    "@react-awesome/use-previous" "0.0.3"
+    "@react-awesome/use-selection-range" "0.0.3"
+    "@react-awesome/use-toggle" "1.0.0"
+
+"@react-awesome/phone-input@1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@react-awesome/phone-input/-/phone-input-1.1.6.tgz#5883448ac209f2a93272a23ec99013e06c1bc5eb"
+  integrity sha512-bQivCVs1LXOufh54uY6osmWgq0gIKURlfKeaF5apDxATmByvXVtWmT5u52sScLESHxIhgn5FyRaUdFM7/ANJHQ==
+  dependencies:
+    classnames "^2.5.1"
+    libphonenumber-js "^1.10.53"
+
+"@react-awesome/use-breakpoint@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@react-awesome/use-breakpoint/-/use-breakpoint-1.0.0.tgz#be1c6366427a6a25f40690c95ab0c51b12d4b9d5"
+  integrity sha512-6oC6aKVyA6DWxwX+kAXaS0glaYnB3LAglhBPy4pO/9ICkwvAFTHyFDYlZ7intztvO7AMziQjLgLh6HUlX+J2TA==
+  dependencies:
+    lodash "^4.17.21"
+
+"@react-awesome/use-click-outside@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@react-awesome/use-click-outside/-/use-click-outside-0.0.3.tgz#376053240cd4f7358ec51e8a3509ca4e5912af8e"
+  integrity sha512-XnrlL30rSPabs075LEeSdwgQ5KLonrRluHEC12Gg8OaWWZh47sXk5zfj4HZohEumnzrAmv+ODoIlRuuFz8L7iw==
+
+"@react-awesome/use-preserve-input-caret-position@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@react-awesome/use-preserve-input-caret-position/-/use-preserve-input-caret-position-0.0.3.tgz#42aed7dd408f44f00c5d53f8ff9ab9c4ba281e44"
+  integrity sha512-we+99kOiITiw9wvStcoy/04owgCKrL3fWFm9i/AcnvFX5wpidVKGo80yK2/1/varXjmBQb99mfg7ZTaxX15DvA==
+
+"@react-awesome/use-previous@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@react-awesome/use-previous/-/use-previous-0.0.3.tgz#4c1969c4bdb2cd2b93055db3560e006dcccd07d5"
+  integrity sha512-K5xHqKzwPUt2SgUXwY9ngMV30ylRmVn4BmYuoUgcCgvoUKQswxzZ/7T1WDQK890jdeF7wdbFm410j+5GMYDMNQ==
+
+"@react-awesome/use-selection-range@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@react-awesome/use-selection-range/-/use-selection-range-0.0.3.tgz#071faf77c033558646a23d3399f7ad35f642d9b2"
+  integrity sha512-ekVqLPQsxNEIS0VnQJsioqtyW7Rur3sgnezYbKKAb5JlLurriKXRnpceieXky/4hTyg1zX+RmszGy0gBemX9cw==
+
+"@react-awesome/use-toggle@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@react-awesome/use-toggle/-/use-toggle-1.0.0.tgz#0e1817c254676a69dd1a022053642b6fe70f761c"
+  integrity sha512-c8jvHqrDz+jTUTZud8p0PB+FUHe082fMLzJ+yKs33iDo6bPkmqIA1XjlY3qv2/5uUb8dVv6zI9t++SoPJoQJGA==
+
+"@remix-run/router@1.19.2":
+  version "1.19.2"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.19.2.tgz#0c896535473291cb41f152c180bedd5680a3b273"
+  integrity sha512-baiMx18+IMuD1yyvOGaHM9QrVUPGGG0jC+z+IPHnRJWUAUvaKuWKyE8gjDj2rzv3sz9zOGoRSPgeBVHRhZnBlA==
+
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
@@ -1376,6 +1442,11 @@ cjs-module-lexer@^1.0.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.3.1.tgz#c485341ae8fd999ca4ee5af2d7a1c9ae01e0099c"
   integrity sha512-a3KdPAANPbNE4ZUv9h6LckSl9zLsYOP4MBmhIPkRaeyybt+r4UghLvq+xw/YwUcC1gqylCkL4rdVs3Lwupjm4Q==
+
+classnames@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
 
 cliui@^8.0.1:
   version "8.0.1"
@@ -2490,7 +2561,7 @@ jest@^29.7.0:
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
 js-yaml@^3.13.1:
@@ -2551,6 +2622,11 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+libphonenumber-js@^1.10.53:
+  version "1.11.7"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.11.7.tgz#efe4fcf816e1982925e9c800d0013b0ee99b8283"
+  integrity sha512-x2xON4/Qg2bRIS11KIN9yCNYUjhtiEjNyptjX0mX+pyKHecxuJVLIpfX1lq9ZD6CrC/rB+y4GBi18c6CEcUR+A==
+
 lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
@@ -2574,6 +2650,11 @@ lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0:
   version "1.4.0"
@@ -2924,6 +3005,11 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
+react-merge-refs@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-2.1.1.tgz#e46763f8f1b881c0226ee54a1a2a10ffefba0233"
+  integrity sha512-jLQXJ/URln51zskhgppGJ2ub7b2WFKGq3cl3NYKtlHoTG+dN2q7EzWrn3hN3EgPsTMvpR9tpq5ijdp7YwFZkag==
+
 react-popper@2.3.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/react-popper/-/react-popper-2.3.0.tgz"
@@ -2937,10 +3023,25 @@ react-refresh@^0.14.0:
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.0.tgz"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
 
+react-router-dom@^6.26.2:
+  version "6.26.2"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.26.2.tgz#a6e3b0cbd6bfd508e42b9342099d015a0ac59680"
+  integrity sha512-z7YkaEW0Dy35T3/QKPYB1LjMK2R1fxnHO8kWpUMTBdfVzZrWOiY9a7CtN8HqdWtDUWd5FY6Dl8HFsqVwH4uOtQ==
+  dependencies:
+    "@remix-run/router" "1.19.2"
+    react-router "6.26.2"
+
+react-router@6.26.2:
+  version "6.26.2"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.26.2.tgz#2f0a68999168954431cdc29dd36cec3b6fa44a7e"
+  integrity sha512-tvN1iuT03kHgOFnLPfLJ8V95eijteveqdOSk+srqfePtQvqCExB8eHOYnlilbOcyJyKnYkr1vJvf7YqotAJu1A==
+  dependencies:
+    "@remix-run/router" "1.19.2"
+
 react@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
 
