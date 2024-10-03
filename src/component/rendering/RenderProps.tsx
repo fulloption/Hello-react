@@ -10,11 +10,12 @@ function MagicBox({ render }) {
 
   return (
     <div>
+      {isOpen && render()} 
       <button onClick={handleToggle}>
         {isOpen ? 'ปิดกล่อง' : 'เปิดกล่อง'}
       </button>
       {/* นี่คือส่วนที่เราใช้ render props */}
-      {isOpen && render()} 
+      
     </div>
   );
 }
@@ -22,11 +23,11 @@ function MagicBox({ render }) {
 function App() {
   return (
     <div>
-      <h1>✨ กล่องวิเศษ ✨</h1>
+      <h1>✨ ทดสอบ Render Props ✨</h1>
       <MagicBox
         render={() => (
           <div>
-            <h2>🎁 ข้างในกล่องมีของขวัญ! 🎁</h2>
+            <h2>🎁 inside object 🎁</h2>
           </div>
         )}
       />
