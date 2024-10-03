@@ -30,14 +30,14 @@
         1.Class Components: เป็นรูปแบบดั้งเดิมที่ใช้ class ในการสร้าง component
         2.Functional Components: เป็นรูปแบบที่ใหม่กว่า เขียนด้วยฟังก์ชัน JavaScript
         3.Functional Components with React.FC: คล้ายกับ Functional Components ปกติ แต่มีข้อดีคือ TypeScript type checking ที่ดีขึ้น React.FC เป็น type alias
-    -Rendering
+    -Rendering[rendering.html]
         -Component Life Cycle  วงจรชีวิตของ component ในแอปพลิเคชัน React
         -Lists and Keys การใช้ key เป็นสิ่งสำคัญมากใน React เพราะมันช่วยให้ React ทำงานได้อย่างถูกต้อง
         -Render Props เทคนิคที่ช่วยให้เราสามารถส่ง"วิธีการแสดงผล"จาก component หนึ่งไปยังอีก component หนึ่งได้
         -Refs การเข้าถึง DOM nodes หรือ React elements ที่ถูกสร้างขึ้นใน render method โดยตรง แต่ควรใช้ด้วยความระมัดระวัง
         -Events vent Handler ใน React ช่วยให้เราสามารถสร้าง component ที่ interactive
         -High Order Components HOC เป็นเทคนิคที่ช่วยให้เราสามารถเพิ่มฟังก์ชันการทำงานให้กับ component ได้อย่างยืดหยุ่น       
-    -Hooks
+    -Hooks[hook.html]
         useState - จัดการ State ของคอมโพเนนต์
         useEffect - ทำ Side Effect เช่น fetch data, set up subscriptions / event
         useContext - แชร์ข้อมูลระหว่างคอมโพเนนต์ที่ไม่เกี่ยวข้องโดยตรง
