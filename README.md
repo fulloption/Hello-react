@@ -66,9 +66,21 @@
         - ใช้ useCallback(memoize ฟังก์ชัน) และ useMemo(memoize value) เพื่อเพิ่มประสิทธิภาพ
         - หลีกเลี่ยงการใช้ Ref สำหรับจัดการ State Ref ควรใช้สำหรับการเข้าถึง DOM Node โดยตรง
         - ทำความเข้าใจ Lifecycle Methods ของ Hooks -function มีพฤติกรรมที่แตกต่างกัน
+    -Router
+        - การใช้ Parameter ใน Routing
+        - การใช้ Nested Routing
+        - การใช้ Navigation
+        - การใช้ Route Guard
+        - การใช้ React Router กับ TypeScript
+        - การใช้ React Router กับ Redux
+        - การใช้ React Router กับ Context API
+        - การใช้ React Router กับ Server-Side Rendering (SSR)
+        - การใช้ React Router กับ Next.js
+
+
 
     Tool Lib
         [Move faster with intuitive React UI tools](https://mui.com/)
         [React hooks for axios](https://www.npmjs.com/package/axios-hooks)
         [open-source software for web developers](https://tanstack.com/)
-        
+        สวัสดี Suthinan

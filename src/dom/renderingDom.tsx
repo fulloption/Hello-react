@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import LifeCycle from '../component/rendering/LifeCycleDemoComp'
-import ListAndKey from '../component/rendering/ListAndKey'
-import RenderProps from '../component/rendering/RenderProps'
-import Refs from '../component/rendering/Refs'
-import Event from '../component/rendering/Event'
-import HighOrder from '../component/rendering/HighOrder'
+import ListAndKey from '../component/rendering/ListAndKeyComp'
+import RenderProps from '../component/rendering/RenderPropsComp'
+import Refs from '../component/rendering/RefsComp'
+import Event from '../component/rendering/EventComp'
+import HighOrder from '../component/rendering/HighOrderComp'
 ReactDOM
     .createRoot(document.getElementById('lifeCycle')!)
       .render(
