@@ -2,31 +2,26 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
 
 function Home() {
-  const navigate = useNavigate();
-  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate(); // เรียกใช้ useNavigate hook
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    navigate(`/search?q=${searchTerm}`);
+  const handleClick = () => {
+    navigate('/aboutNavigation'); // นำทางไปยังหน้า '/about'
   };
 
   return (
     <div>
       <h1>หน้าแรก</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-        <button type="submit">ค้นหา</button>
-      </form>
+      <p>ยินดีต้อนรับสู่แอปพลิเคชันของเรา</p>
+      <button onClick={handleClick}>ไปยังหน้าเกี่ยวกับเรา</button>
     </div>
   );
 }
 
-function Search() {
-  const { q } = new URLSearchParams(window.location.search);
+function About() {
   return (
     <div>
-      <h1>ผลการค้นหา</h1>
-      <p>คำค้นหา: {q}</p>
+      <h1>เกี่ยวกับเรา</h1>
+      <p>นี่คือหน้าเกี่ยวกับแอปพลิเคชันของเรา</p>
     </div>
   );
 }
@@ -34,17 +29,19 @@ function Search() {
 function App() {
   return (
     <BrowserRouter>
+      <nav>
+        <ul>
+          <li><Link to="/homeNavigation">หน้าแรก</Link></li>
+          <li><Link to="/aboutNavigation">เกี่ยวกับเรา</Link></li>
+        </ul>
+      </nav>
+
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/homeNavigation" element={<Home />} />
+        <Route path="/aboutNavigation" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-// คำอธิบาย:
-
-// useNavigate: Hook ที่ใช้สำหรับการนำทางไปยังหน้าต่าง ๆ ในแอปพลิเคชัน
-// navigate: ฟังก์ชันที่ใช้สำหรับการนำทางไปยังเส้นทางที่ระบุ
-// URLSearchParams: คลาสที่ใช้สำหรับการจัดการ query parameter ใน URL

@@ -1,7 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet, useParams } from 'react-router-dom';
+const Home = () => { 
+  return (
+    <div>
+      <h1>หน้าแรก</h1>
+      <p>ยินดีต้อนรับสู่แอปพลิเคชันของเรา</p>
+    </div>
+  );
+}
 
-function Products() {
+const Products= () => { 
   return (
     <div>
       <h1>สินค้า</h1>
@@ -9,12 +17,12 @@ function Products() {
         <li><Link to="/products/1">สินค้า 1</Link></li>
         <li><Link to="/products/2">สินค้า 2</Link></li>
       </ul>
-      <Outlet />
+      <Outlet /> 
     </div>
   );
 }
 
-function ProductDetail() {
+const ProductDetail = () => { 
   const { productId } = useParams();
   return (
     <div>
@@ -24,22 +32,25 @@ function ProductDetail() {
   );
 }
 
-function App() {
-  return (
+const App = () => {
+  return (    
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />}>
-          <Route path=":productId" element={<ProductDetail />} />
-        </Route>
-      </Routes>
+      <div> 
+        <nav>
+          <ul>
+            <li><Link to="/router.html">Router Main</Link></li> {/* เปลี่ยนเส้นทางเป็น "/" */}
+            <li><Link to="/homeNested">หน้าแรก</Link></li>
+            <li><Link to="/productsNested">สินค้า</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/homeNested" element={<Home />} /> 
+          <Route path="/productsNested" element={<Products />}>
+            <Route path=":productIdNested" element={<ProductDetail />} />
+          </Route>
+        </Routes>
+      </div> 
     </BrowserRouter>
   );
 }
-
 export default App;
-// คำอธิบาย:
-
-// Outlet: องค์ประกอบที่ใช้สำหรับแสดงองค์ประกอบย่อย (child component) ของเส้นทางปัจจุบัน
-// Products: องค์ประกอบที่แสดงรายการสินค้า
-// ProductDetail: องค์ประกอบที่แสดงรายละเอียดของสินค้าตาม ID

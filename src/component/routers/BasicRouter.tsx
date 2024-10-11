@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-function Home() {
+const HomeBasic = () => { 
   return (
     <div>
       <h1>หน้าแรก</h1>
@@ -10,7 +10,7 @@ function Home() {
   );
 }
 
-function About() {
+const AboutBasic = () => { 
   return (
     <div>
       <h1>เกี่ยวกับเรา</h1>
@@ -19,28 +19,30 @@ function About() {
   );
 }
 
-function App() {
+const AppBasic = () => {
   return (
     <BrowserRouter>
       <div>
         <nav>
           <ul>
-            <li>
-              <Link to="/home">หน้าแรก</Link>
+          <li>
+              <Link to="/router.html">Router Main</Link>
             </li>
             <li>
-              <Link to="/about">เกี่ยวกับเรา</Link>
+              <Link to="/homeBasic">หน้าแรก</Link>
+            </li>
+            <li>
+              <Link to="/aboutBasic">เกี่ยวกับเรา</Link>
             </li>
           </ul>
         </nav>
 
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/homeBasic" element={<HomeBasic />} />
+          <Route path="/aboutBasic" element={<AboutBasic />} />
         </Routes>
       </div>
     </BrowserRouter>
   );
 }
-
-export default App;
+export default AppBasic;
