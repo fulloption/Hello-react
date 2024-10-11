@@ -33,11 +33,18 @@ import Next from '../component/routers/RouterInNext.tsx'; // Assuming BasicRoute
 //       </React.StrictMode>
 //   );
   
+// ReactDOM
+//   .createRoot(document.getElementById('guard')!)
+//     .render(
+//       <React.StrictMode>
+//         <Guard />
+//       </React.StrictMode>
+//   );
+
 ReactDOM
-  .createRoot(document.getElementById('guard')!)
+  .createRoot(document.getElementById('redux')!)
     .render(
       <React.StrictMode>
-        <Guard />
+        <Redux />
       </React.StrictMode>
-  );
-  
+  );  

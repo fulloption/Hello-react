@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route, Link, Navigate, useLocation } from 'react
 // ฟังก์ชันจำลองการตรวจสอบสถานะการเข้าสู่ระบบ
 const isAuthenticated = () => {
   // ตรวจสอบจาก localStorage, session, หรือ API
+
+  
   // return localStorage.getItem('token') !== null;
   return true;
 };
