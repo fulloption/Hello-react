@@ -41,10 +41,20 @@ import Next from '../component/routers/RouterInNext.tsx'; // Assuming BasicRoute
 //       </React.StrictMode>
 //   );
 
+// ReactDOM
+//   .createRoot(document.getElementById('redux')!)
+//     .render(
+//       <React.StrictMode>
+//         <Redux />
+//       </React.StrictMode>
+//   );  
+
 ReactDOM
-  .createRoot(document.getElementById('redux')!)
+  .createRoot(document.getElementById('contextAPI')!)
     .render(
       <React.StrictMode>
-        <Redux />
+        <ContextAPI />
       </React.StrictMode>
   );  
+  
+  
