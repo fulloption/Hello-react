@@ -81,6 +81,7 @@ function App() {
               <li><Link to="/users/2">แดชบอร์ด (ผู้ใช้ ID 2)</Link></li>
               <li><Link to="/users/3">แดชบอร์ด (ผู้ใช้ ID 3)</Link></li>
               <li><Link to="/users/4">แดชบอร์ด (ผู้ใช้ ID 4)</Link></li>
+              <li><Link to="/users/5">แดชบอร์ด (ผู้ใช้ ID 5)</Link></li>
             </ul>
           </nav>
 
@@ -96,3 +97,24 @@ function App() {
 }
 
 export default App;
+
+// React Router ร่วมกับ Redux
+//  สถานะ (state) ที่จำเป็นต้องใช้ใน Redux store คือ
+// 1.ถูกใช้งานร่วมกันโดยหลาย components: หากมีข้อมูลที่ต้องถูกแสดงผลหรือแก้ไขโดย components หลายตัว 
+//   การเก็บข้อมูลนั้นใน Redux store จะช่วยให้ components เหล่านั้นเข้าถึงข้อมูลเดียวกันได้ง่ายขึ้น
+// 2.มีการเปลี่ยนแปลงบ่อยครั้ง: หากข้อมูลมีการเปลี่ยนแปลงบ่อยครั้ง การจัดการ state ใน Redux 
+//   จะช่วยให้การอัพเดท UI เป็นไปอย่างมีประสิทธิภาพมากขึ้น
+// 3.ต้องการ logic ที่ซับซ้อนในการจัดการ: หาก logic ในการอัพเดท state มีความซับซ้อน 
+//   การใช้ Redux จะช่วยให้ code เป็นระเบียบและง่ายต่อการดูแลรักษามากขึ้น
+
+//  สถานะที่ไม่จำเป็นต้องใช้ Redux:
+// 1.สถานะภายใน component (local state): หากข้อมูลถูกใช้งานภายใน component เดียว และไม่มีผลกระทบต่อ components อื่นๆ 
+//   การใช้ useState หรือ useReducer ภายใน component นั้นๆ ก็เพียงพอแล้ว
+// 2.ข้อมูลที่ไม่เปลี่ยนแปลง (static data): หากข้อมูลไม่เปลี่ยนแปลงตลอดการใช้งานแอปพลิเคชัน 
+//   ไม่จำเป็นต้องเก็บข้อมูลนั้นใน Redux store
+
+//  สถานะที่อาจทำให้เกิดความสับสน:
+// 1.URL parameters: ไม่ควรเก็บ URL parameters ใน Redux store เนื่องจาก URL parameters เป็นส่วนหนึ่งของ routing logic 
+//   และสามารถเข้าถึงได้โดยตรงผ่าน useParams() ใน React Router
+// 2.สถานะที่ขึ้นอยู่กับ URL parameters: หาก state ขึ้นอยู่กับ URL parameters ควรคำนวณ state นั้นภายใน component 
+//   ที่ใช้งาน โดยใช้ useParams() และ useEffect() แทนการเก็บ state นั้นใน Redux store
