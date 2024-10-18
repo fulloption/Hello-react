@@ -74,10 +74,6 @@
         - การใช้ React Router กับ TypeScript
         - การใช้ React Router กับ Redux
         - การใช้ React Router กับ Context API
-        - การใช้ React Router กับ Server-Side Rendering (SSR)
-        - การใช้ React Router กับ Next.js
-
-
 
     Tool Lib
         [Move faster with intuitive React UI tools](https://mui.com/)
